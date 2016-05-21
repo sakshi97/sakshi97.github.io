@@ -1,0 +1,67 @@
+
+body {
+
+}
+ul#mynavbar{
+	color:white;
+}
+ul#mynavbar li{
+	color:white;
+	font-size:10px;
+}
+ .heading {
+ 	color:black;
+ 	padding-top: 20px;
+ 	margin-left:-40px;
+ } 
+ .heading h1{
+ 	font-size:50px;
+ 	font-family: Arial black;
+ 	text-align :left;
+ }
+ .header{
+ 	background-color: #F0F0F0 !important;
+ 	margin-top: 53px;
+ }
+
+.section{
+	background-color: white;
+}
+
+.section .main-section{
+	text-align:justify;
+	font-size:20px;
+	color:black;
+	padding-right:30px;
+}
+ .aside1,.aside2{
+background-color: white;
+ }
+ .aside1 .bookstore h2,.aside1 .submit h2, .aside1 .socials h2{
+ 	font-size:20px;
+ 	font-weight:bold;
+ 	font-family:Arial black;
+ 	padding:0px;
+ 	text-align: center;
+ }
+
+/*	margin-top: 50px;
+	background-color: black;
+	padding:10px;
+}
+
+#headerimage{
+margin-right: 50px;
+}
+
+#heading {
+	color: white;
+	background-color: black;
+	font-size: 80px;
+	font-style: italic;
+	font-weight:bold;
+	margin-left: 50px;
+	margin-top:100px;
+
+}
+*/
