@@ -1,0 +1,29 @@
+<div  ng-controller="MainCtrl">
+<div class="container-fluid" >
+<div class="myheading">
+<h1>Movie Database</h1>
+</div>
+<div class="movie_data col-sm-6" ng-repeat="movie in movielist| orderBy: '-vote_average'" >
+<div class="row">
+<div class="col-sm-10 col-sm-offset-1 dataholder">
+<div class="title">
+{{movie.title}}<br>
+</div>
+<div class="row content">
+<div class="col-sm-4" style="margin:0px;">
+<img  class="image img-responsive"  ng-src="http://image.tmdb.org/t/p/w500{{movie.poster_path}}">
+</div>
+<div class="col-sm-1">
+</div>
+<div class="col-sm-7" style="margin:0px;text-align:justify;">
+<p class="rating">Rating : {{movie.vote_average}}  <span class="glyphicon glyphicon-heart"></span></p>
+{{movie.overview| limitTo:175}}<span ng-if="movie.overview.length > 175">....</span><br>
+<hr>
+<a href="#movie/{{movie.id}}" class="link">Read more</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>

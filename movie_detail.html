@@ -1,0 +1,40 @@
+<div class="container-fluid" style="background-color:white;" >
+<div class="movie_sec1">
+Movie Database
+</div>
+<div class="movie_sec2" >
+<div class='row'>
+<div class="col-sm-7 col-md-7" style="margin:0px;"">
+<h1>{{moviedetails.title}}</h1>
+<h4>{{moviedetails.tagline}}</h4>
+</div>
+<div class="col-sm-5 col-md-5">
+<h3 class="movie_rating">{{moviedetails.vote_average}}   <span class="glyphicon glyphicon-heart"></span></h3>
+<h4> Release Date : {{moviedetails.release_date}}   <span class="glyphicon glyphicon-calendar"></span></h4>
+</div>
+</div>
+</div>
+<div class="movie_sec3">
+<div class="row">
+<div class="col-sm-3" >
+<img  class="movie_image img-responsive"  ng-src="http://image.tmdb.org/t/p/w500{{moviedetails.poster_path}}">
+</div>
+<div class="col-sm-9 movie_content">
+<!--Plot-->
+<h2><span style="font-family:Verdana;">Plot</span></h2>
+{{moviedetails.overview}}
+<!--Runtime -->
+<span ><h3>Runtime</h3>{{moviedetails.runtime}} minutes</span>
+<h3>Genre</h3>
+<div style="word-spacing:20px;">
+<span ng-repeat="genre in moviedetails.genres" >{{genre.name}} </span>
+</div>
+</div>
+</div>
+</div>
+<div class="movie_sec4">
+<h3 style="margin-bottom:20px;">Links</h3>
+<a  href="{{moviedetails.homepage}}" target="_blank"><button class="movie_link">HomePage</button></a>
+<a  href="{{moviedetails.homepage}}" target="_blank"><button class="movie_link">HomePage</button></a>
+</div>
+</div>
