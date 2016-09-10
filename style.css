@@ -98,13 +98,18 @@ background-color: #F0F0F0  ;
 	color:#FFFAF0;
 	font-size: 16px;
 }
+.movie_sec4{
+	margin-top:30px;
+	color:#001a1a;
+	margin-left:30px;
+}
 .movie_link{
 	margin-right:20px;
 	margin-bottom:10px;
 	background-color:#B22222 ;
 	padding:7px;
-	border:3px solid white;
-	border-radius:15%;
+/*	border:3px solid white;
+	border-radius:15%;*/
 	color:white;
 
 }
